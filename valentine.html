@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine 💖</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+    }
+    #no {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Will you be my Valentine? 💘</h1>
+
+<button onclick="yesClick()">Yes 💕</button>
+<button id="no" onmouseover="moveNo()">No 😶</button>
+
+<script>
+  function moveNo() {
+    const noBtn = document.getElementById("no");
+    noBtn.style.left = Math.random() * 300 + "px";
+    noBtn.style.top = Math.random() * 300 + "px";
+  }
+
+  function yesClick() {
+    document.body.innerHTML =
+      "<h1>YAYYYYY 🥳💖</h1><img src='https://media.tenor.com/0AVbKGY_MxMAAAAC/dance-happy.gif'>";
+  }
+</script>
+
+</body>
+</html>
